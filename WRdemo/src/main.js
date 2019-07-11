@@ -8,7 +8,7 @@ import NaviHeader from './NaviBar/Arrow'
 
 
 
-
+import API from './API'
 import router from './router'
 import '../WebResource/WebModel/vendor/bootstrap/css/bootstrap.min.css'
 import '../WebResource/WebModel/vendor/font-awesome/css/font-awesome.min.css'
