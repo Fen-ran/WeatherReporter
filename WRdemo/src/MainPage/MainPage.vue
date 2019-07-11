@@ -22,13 +22,27 @@
 </template>
 
 <script>
+import PageHeader from './PageHeader'
+import LocalInfo from './LocalInfo'
+import LineDiagram from './Components/LineDiagram'
+import CircleDiagram from './Components/CircleDiagram'
+import ListDiagram from './Components/ListDiagram'
+import DemoInfo from './DemoInfo'
+
 export default {
   name: "MainPage",
   data() {
     return {};
   },
   methods: {},
-  components: {}
+  components: {
+    PageHeader,
+    LocalInfo,
+    LineDiagram,
+    CircleDiagram,
+    ListDiagram,
+    DemoInfo
+  }
 };
 </script>
 

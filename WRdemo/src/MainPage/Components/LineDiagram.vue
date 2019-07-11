@@ -18,11 +18,22 @@
 export default {
   name: "LineDiagram",
   data() {
-    return {};
+    return {
+      tempMax: [20, 27, 32, 25, 34, 32]
+    };
   },
-  methods: {},
+  methods: {
+
+
+    
+  },
   components: {}
 };
+
+
+
+
+
 </script>
 
 <style>

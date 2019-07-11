@@ -16,8 +16,17 @@
 </template>
 
 <script>
+import CircleDiagramLoadButton from './CircleDiagramLoadButton'
+import LineDiagramLoadButton from './LineDiagramLoadButton'
+import ListDiagramLoadButton from './ListDiagramLoadButton'
+
 export default {
-  name: "QuickAccess"
+  name: "QuickAccess",
+  components: {
+    LineDiagramLoadButton,
+    CircleDiagramLoadButton,
+    ListDiagramLoadButton
+  }
 };
 </script>
 

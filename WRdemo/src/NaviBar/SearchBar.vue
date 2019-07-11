@@ -1,20 +1,60 @@
 <template>
-  <!--TODO 搜索栏传递搜索信息-->
-  <div class="right-menu list-inline no-margin-bottom">
-    <div class="list-inline-item"><a
-        href="#/#"
-        class="search-open nav-link"
-      ><i class="icon-magnifying-glass-browser"></i></a></div>
+  <div class="search-panel">
+    <div class="search-inner d-flex align-items-center justify-content-center">
+      <div class="close-btn">Close <i class="fa fa-close"></i></div>
+      <form id="searchForm">
+        <div class="form-group">
+          <input
+            v-model.trim="chosenCity"
+            placeholder="What are you searching for..."
+          >
+          <button
+            type="submit"
+            class="submit"
+            v-on:click="getWeatherData()"
+          >Search</button>
+        </div>
+      </form>
+    </div>
   </div>
 </template>
 
+<script></script>
 <script>
 export default {
   name: "SearchBar",
+  props: ["list"],
   data() {
-    return {};
+    return {
+      apiKey: "a8d83d029e8eb8dbe22fdf75647b01f9",
+      chosenCity: "北京",
+      dtype: "json"
+    };
   },
-  methods: {},
+  methods: {
+    getWeatherData() {
+      console.log("测试开始");
+      jQuery.support.cors = true;
+
+      $.ajax({
+        url: "http://v.juhe.cn/weather/index",
+        type: "get",
+        data: {
+          cityname: this.chosenCity,
+          dtype: "json",
+          key: this.apiKey
+        },
+        dataType: "jsonp",
+        success: function(info) {
+          // list = info;
+          console.log(info);
+        },
+        error: function(error, Msgerror) {
+          console.log(Msgerror);
+        }
+      });
+    }
+  },
   components: {}
 };
 </script>

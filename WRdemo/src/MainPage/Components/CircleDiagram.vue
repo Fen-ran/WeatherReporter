@@ -47,7 +47,7 @@ export default {
     name: 'CircleDiagram',
   data() {
     return {
-
+      changeTrend: 'Rising'
     }
   },
   methods: {

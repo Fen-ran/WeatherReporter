@@ -26,8 +26,15 @@
 </template>
 
 <script>
+import Home from './Home'
+import QuickAccess from './QuickAccess/QuickAccess'
+
 export default {
-  name: "SideBar"
+  name: "SideBar",
+  components: {
+    Home,
+    QuickAccess
+  }
 };
 </script>
 
