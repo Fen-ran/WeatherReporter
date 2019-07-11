@@ -1,14 +1,14 @@
 <template>
-  <div id="LineDiagramLoadButton">
+  <div id="LineDiagramHideButton">
       <li><a href="#AnchFuture">Future Weather</a></li>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'LineDiagramLoadButton'
+  name: 'LineDiagramHideButton'
 }
 </script>
 
-<style lang='stylus' scoped>
+<style>
 </style>

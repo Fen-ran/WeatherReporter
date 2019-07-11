@@ -33,6 +33,6 @@ export default {
 
 <style>
 #NaviBar {
-    align-content: center !important
+
 }
 </style>

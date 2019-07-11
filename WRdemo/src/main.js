@@ -6,18 +6,19 @@ import NaviBar from './NaviBar/NaviBar'
 import SearchBar from './NaviBar/SearchBar'
 import NaviHeader from './NaviBar/Arrow'
 import Home from './SideBar/Home'
+
 import SideBar from './SideBar/SideBar'
-import Quick-Access from './SideBar/Quick-Access/Quick-Access'
-import Quick-Access from './SideBar/Quick-Access/CircleDiagramHideButton'
-import Quick-Access from './SideBar/Quick-Access/CircleDiagramLoadButton'
-import Quick-Access from './SideBar/Quick-Access/LineDiagramHideButton'
-import Quick-Access from './SideBar/Quick-Access/LineDiagramLoadButton'
-import Quick-Access from './SideBar/Quick-Access/ListDiagramHideButton'
-import Quick-Access from './SideBar/Quick-Access/ ListDiagramLoadButton'
+import QuickAccess from './SideBar/QuickAccess/QuickAccess'
+import CircleDiagramHideButton from './SideBar/QuickAccess/CircleDiagramHideButton'
+import CircleDiagramLoadButton from './SideBar/QuickAccess/CircleDiagramLoadButton'
+import LineDiagramHideButton from './SideBar/QuickAccess/LineDiagramHideButton'
+import LineDiagramLoadButton from './SideBar/QuickAccess/LineDiagramLoadButton'
+import ListDiagramHideButton from './SideBar/QuickAccess/ListDiagramHideButton'
+import ListDiagramLoadButton from './SideBar/QuickAccess/ListDiagramLoadButton'
 
 
 
-import API from './API'
+// import API from './API'
 import router from './router'
 import '../WebResource/WebModel/vendor/bootstrap/css/bootstrap.min.css'
 import '../WebResource/WebModel/vendor/font-awesome/css/font-awesome.min.css'
@@ -68,9 +69,9 @@ new Vue({
 })
 
 new Vue({
-  el: 'Quick-Access',
-  components: { Quick-Access },
-  template: '<Quick-Access/>'
+  el: 'QuickAccess',
+  components: { QuickAccess },
+  template: '<QuickAccess/>'
 })
 
 new Vue({

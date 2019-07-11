@@ -1,14 +1,14 @@
 <template>
-  <div id="ListDiagramLoadButton">
+  <div id="ListDiagramHideButton">
       <li><a href="#AnchTodo">Todo List</a></li>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'ListDiagramLoadButton'
+  name: 'ListDiagramHideButton'
 }
 </script>
 
-<style lang='stylus' scoped>
+<style>
 </style>

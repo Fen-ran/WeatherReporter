@@ -1,14 +1,14 @@
 <template>
-  <div id="CircleDiagramLoadButton">
+  <div id="CircleDiagramHideButton">
       <li><a href="#AnchToday">Today Weather</a></li>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'CircleDiagramLoadButton'
+  name: 'CircleDiagramHideButton'
 }
 </script>
 
-<style lang='stylus' scoped>
+<style>
 </style>
