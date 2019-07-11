@@ -7,6 +7,7 @@
             <!--TODO 未来7天折线图-->
             <!--<canvas id="lineCahrt"></canvas>-->
             <canvas id="lineCahrt1"></canvas>
+            <p>{{judgedata1}}</p>
           </div>
         </div>
       </div>
@@ -15,13 +16,23 @@
 </template>
 
 <script>
+import bus from '../../assets/eventBus.js'
 export default {
   name: "LineDiagram",
   data() {
-    return {};
+    return {
+      judgedata1:"123"
+    };
   },
-  methods: {},
-  components: {}
+  methods: {
+
+  },
+  components: {},
+  mounted(){
+    bus.$on("Linechart",function(judgedata1){
+      this.judgedata1=judgedata1
+    })
+  }
 };
 </script>
 
