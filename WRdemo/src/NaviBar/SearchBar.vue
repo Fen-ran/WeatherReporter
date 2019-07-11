@@ -2,7 +2,7 @@
   <!--TODO 搜索栏传递搜索信息-->
   <div class="right-menu list-inline no-margin-bottom">
     <div class="list-inline-item"><a
-        href="#"
+        href="#/#"
         class="search-open nav-link"
       ><i class="icon-magnifying-glass-browser"></i></a></div>
   </div>
