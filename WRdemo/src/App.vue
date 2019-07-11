@@ -6,6 +6,9 @@
 
       <SideBar>
       </SideBar>
+
+      <MainPage>
+      </MainPage>
     </div>
     <router-view />
   </div>
@@ -20,10 +23,6 @@ export default {
 <style>
 @import "//fonts.googleapis.com/css?family=Muli:300,400,700";
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: aliceblue;
 }
 </style>

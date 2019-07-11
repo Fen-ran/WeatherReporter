@@ -1,7 +1,5 @@
 <template>
-  <div id="Home">
-    <li class="active"><a href="index.html"> <i class="icon-home"></i>Home </a></li>
-  </div>
+  <li class="active"><a href="index.html"> <i class="icon-home"></i>Home </a></li>
 </template>
 
 <script>
