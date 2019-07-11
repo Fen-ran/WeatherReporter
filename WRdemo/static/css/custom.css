@@ -1,0 +1,11 @@
+/* your styles go here */
+
+#side-nav-bar{
+    position: absolute;
+}
+
+#side-nav-bar.fixed{
+    position: fixed;
+    top: 0px;
+}
+#footer { height: 600px; }

@@ -13,6 +13,7 @@ export default {
 </script>
 
 <style>
+@import "//fonts.googleapis.com/css?family=Muli:300,400,700";
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
