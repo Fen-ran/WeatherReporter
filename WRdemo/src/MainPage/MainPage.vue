@@ -2,6 +2,8 @@
   <div class="page-content">
     <PageHeader>
     </PageHeader>
+
+
     <LocalInfo>
     </LocalInfo>
 
@@ -10,6 +12,9 @@
 
     <CircleDiagram>
     </CircleDiagram>
+
+    <ListDiagram>
+    </ListDiagram>
 
     <DemoInfo>
     </DemoInfo>

@@ -177,6 +177,3 @@ new Vue({
   components: { DemoInfo },
   template: '<DemoInfo/>'
 })
-
-
-// console.log('API Test' + getLineChartData())

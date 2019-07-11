@@ -17,7 +17,7 @@
                   class="checkbox-template"
                 >
                 <!--TODO 传递一些记事文本，包括穿衣指南-->
-                <label for="input-1">{{ wearSuggestion[0] }}</label>
+                <label for="input-1">阳光很重，注意防晒</label>
               </div>
               <div class="item d-flex align-items-center">
                 <input
@@ -27,7 +27,7 @@
                   checked
                   class="checkbox-template"
                 >
-                <label for="input-2">{{ wearSuggestion[1] }}</label>
+                <label for="input-2">适合洗车</label>
               </div>
               <div class="item d-flex align-items-center">
                 <input
@@ -36,7 +36,7 @@
                   name="input-3"
                   class="checkbox-template"
                 >
-                <label for="input-3">{{ wearSuggestion[2] }}</label>
+                <label for="input-3">建议保护视力</label>
               </div>
               <div class="item d-flex align-items-center">
                 <input
@@ -68,7 +68,8 @@
 export default {
   name: "ListDiagram",
   data() {
-    return {};
+    wearSuggestion = []
+    return {wearSuggestion};
   },
   methods: {},
   components: {}
