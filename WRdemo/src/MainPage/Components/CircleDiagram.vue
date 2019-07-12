@@ -15,7 +15,7 @@
                 </div>
                 <div class="col-7">
                   <div class="bar-chart chart">
-                    <canvas id="salesBarChart1_1"></canvas>
+                    <canvas id="salesBarChart1"></canvas>
                   </div>
                 </div>
               </div>
@@ -56,7 +56,114 @@ export default {
   components: {
 
   }
-}
+};
+$(document).ready(function() {
+    // ------------------------------------------------------- //
+    // Sales Bar Chart 1
+    // ------------------------------------------------------ //
+    var BARCHART1 = $('#salesBarChart1');
+    var barChartHome = new Chart(BARCHART1, {
+        type: 'bar',
+        options:
+        {
+            scales:
+            {
+                xAxes: [{
+                    display: false,
+                    barPercentage: 0.2
+                }],
+                yAxes: [{
+                    display: false
+                }],
+            },
+            legend: {
+                display: false
+            }
+        },
+        data: {
+            labels: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
+            datasets: [
+                {
+                    label: "Data Set 1",
+                    backgroundColor: [
+                        '#EF8C99',
+                        '#EF8C99',
+                        '#EF8C99',
+                        '#EF8C99',
+                        '#EF8C99',
+                        '#EF8C99',
+                        '#EF8C99',
+                        '#EF8C99',
+                        '#EF8C99',
+                        '#EF8C99',
+                        '#EF8C99'
+                    ],
+                    borderColor: [
+                        '#EF8C99',
+                        '#EF8C99',
+                        '#EF8C99',
+                        '#EF8C99',
+                        '#EF8C99',
+                        '#EF8C99',
+                        '#EF8C99',
+                        '#EF8C99',
+                        '#EF8C99',
+                        '#EF8C99',
+                        '#EF8C99'
+                    ],
+                    borderWidth: 0.2,
+                    //TODO JSP填充数据 近7天的平均气温与第一天的差值，正负都要
+                    data: [1, -5, 4, 6, -3, 2, 0, 3, -4, 2]
+                }
+            ]
+        }
+    });
+
+     // ------------------------------------------------------- //
+    // Pie Chart Custom 1
+    // ------------------------------------------------------ //
+    var PIECHARTEXMPLE    = $('#pieChartCustom1');
+    var pieChartExample = new Chart(PIECHARTEXMPLE, {
+        type: 'pie',
+        options: {
+            legend: {
+                display: true,
+                position: "left"
+            }
+        },
+        data: {
+            labels: [
+                "Sunny",
+                "Cloudy",
+                "Rainy",
+                "Snowy"
+            ],
+            datasets: [
+                {
+                    //TODO JSP填充晴雨表数据 全国统计天数即可，晴|%云%|%雨|%雪%
+                    data: [300, 50, 100, 80],
+                    borderWidth: 0,
+                    backgroundColor: [
+                        '#723ac3',
+                        "#864DD9",
+                        "#9762e6",
+                        "#a678eb"
+                    ],
+                    hoverBackgroundColor: [
+                        '#723ac3',
+                        "#864DD9",
+                        "#9762e6",
+                        "#a678eb"
+                    ]
+                }]
+            }
+    });
+
+    var pieChartExample = {
+        responsive: true
+    };
+
+})
 </script>
 
 <style>
