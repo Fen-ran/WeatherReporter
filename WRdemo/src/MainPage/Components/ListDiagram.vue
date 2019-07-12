@@ -68,8 +68,7 @@
 export default {
   name: "ListDiagram",
   data() {
-    wearSuggestion = []
-    return {wearSuggestion};
+    return {};
   },
   methods: {},
   components: {}

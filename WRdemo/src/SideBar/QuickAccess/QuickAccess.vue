@@ -8,28 +8,24 @@
       id="exampledropdownDropdown"
       class="collapse list-unstyled "
     >
-      <li is="CircleDiagramLoadButton" @Linecgart='Linechart'></li>
+      <li is="CircleDiagramLoadButton"></li>
       <li is="LineDiagramLoadButton"></li>
       <li is="ListDiagramLoadButton"></li>
-      <p>Father:{{judgedata1}}</p>
     </ul>
   </li>
 </template>
 
 <script>
+import CircleDiagramLoadButton from './CircleDiagramLoadButton'
+import LineDiagramLoadButton from './LineDiagramLoadButton'
+import ListDiagramLoadButton from './ListDiagramLoadButton'
+
 export default {
   name: "QuickAccess",
-  data(){
-    return{
-      judgedata1:"456"
-    }
-  },
-  methods:{
-    Linechart:function(judgedata1){
-      this.judgedata1=judgedata1;
-      console.log(judgedata1)
-      this.$emit("LineChart",judgedata1);
-    }
+  components: {
+    LineDiagramLoadButton,
+    CircleDiagramLoadButton,
+    ListDiagramLoadButton
   }
 };
 </script>
