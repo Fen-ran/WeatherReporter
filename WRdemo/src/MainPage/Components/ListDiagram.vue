@@ -54,7 +54,7 @@
                   name="input-5"
                   class="checkbox-template"
                 >
-                <label for="input-5">今天要做Python大作业展示，记得带电脑，啊还要带上脑子。</label>
+                <label for="input-5">今天要做Vue大作业展示，记得带电脑，啊还要带上脑子。</label>
               </div>
             </div>
           </div>

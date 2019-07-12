@@ -9,7 +9,6 @@
             placeholder="What are you searching for..."
           >
           <button
-            onclick="location.href='./index.html'"
             type="submit"
             class="submit"
             v-on:click="getWeatherData()"
@@ -27,7 +26,7 @@ export default {
   data() {
     return {
       apiKey: "a8d83d029e8eb8dbe22fdf75647b01f9",
-      chosenCity: "北京",
+      chosenCity: "",
       dtype: "json"
     };
   },
@@ -53,6 +52,8 @@ export default {
           console.log(info);
 
           self.$store.commit('newWeatherData', arr)
+
+          //location.href='/'
         },
         error: function(error, Msgerror) {
           console.log(Msgerror);

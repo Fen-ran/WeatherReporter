@@ -7,11 +7,6 @@ import './API/API'
 import Axios from 'axios'
 import router from './router'
 import store from '../store/index'
-// import '../WebResource/WebModel/vendor/bootstrap/css/bootstrap.min.css'
-// import '../WebResource/WebModel/vendor/font-awesome/css/font-awesome.min.css'
-// import '../WebResource/WebModel/css/font.css'
-// import '../WebResource/WebModel/css/style.default.css'
-// import '../WebResource/WebModel/css/custom.css'
 
 Vue.prototype.$axios = Axios
 // Axios.defaults.baseURL = '/api'
