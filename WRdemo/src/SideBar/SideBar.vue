@@ -19,28 +19,26 @@
         <Home>
         </Home>
         <!-- <li is="QuickAccess"></li> -->
-        <QuickAccess @Linechart='Linechart'>
+        <QuickAccess>
         </QuickAccess>
-        
       </ul>
   </nav>
 </template>
 
 <script>
-import bus from'../assets/eventBus.js'
+import Home from './Home'
+import QuickAccess from './QuickAccess/QuickAccess'
+
 export default {
   name: "SideBar",
-  data(){
-    return{
-      judgedata1:"123"
-    }
+  data: {
+    
   },
-  methods:{
-    Linechart:function(judgedata1){
-      this.judgedata1=judgedata1;
-      bus.$emit("LineChart",judgedata1);
-    }
+  components: {
+    Home,
+    QuickAccess
   }
+
 };
 </script>
 

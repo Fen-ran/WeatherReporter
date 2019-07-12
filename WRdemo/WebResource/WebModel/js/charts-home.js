@@ -41,7 +41,7 @@ $(document).ready(function () {
         },
         data: {
             //TODO JSP传递 选择未来七天的日期传递进7个变量
-            labels: [ "1", "2", "3", "4", "5", "6", "7"],
+            labels: [ "1", "2", "3", "4", "5", "6", "7"],   // 横坐标
             datasets: [
                 {
                     label: "最高气温",
