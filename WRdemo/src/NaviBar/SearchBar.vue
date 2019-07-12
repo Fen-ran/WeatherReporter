@@ -52,8 +52,6 @@ export default {
           console.log(info);
 
           self.$store.commit('newWeatherData', arr)
-
-          //location.href='/'
         },
         error: function(error, Msgerror) {
           console.log(Msgerror);

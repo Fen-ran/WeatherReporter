@@ -85,7 +85,6 @@ $(document).ready(function() {
     
     console.log(data['future'])
 
-
     var BARCHART1 = $('#salesBarChart1');
     var barChartHome = new Chart(BARCHART1, {
         type: 'bar',
@@ -189,6 +188,7 @@ $(document).ready(function() {
     };
 
 })
+
 
 function drawDiagram(){
   // ------------------------------------------------------- //
@@ -301,6 +301,7 @@ function drawDiagram(){
         responsive: true
     };
 }
+
 </script>
 
 <style>
