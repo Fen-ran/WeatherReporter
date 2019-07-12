@@ -6,4 +6,6 @@ it's a happy pool for QingWaMinMin &amp; NiuWaKeKe
 工作日志：
 状态更新————更新VueDemo文件WeatherReporter/WRdemo
 
-？？？
+这里是Branch————Fafa
+
+由于出现了一些不可预料的原因，和意外操作，主分支中的文件内容已被陈旧版本覆盖，且不支持直接Push全新版本，此处用分支代替
